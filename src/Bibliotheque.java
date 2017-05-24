@@ -6,4 +6,5 @@ import java.util.ArrayList;
 public class Bibliotheque {
     private int nbEtage;
     private ArrayList<Etagere> biblio =new ArrayList<Etagere>();
+
 }

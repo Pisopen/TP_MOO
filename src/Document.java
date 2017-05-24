@@ -9,4 +9,20 @@ public class Document {
         this.num_renseignement = num_renseignement;
         this.titre = titre;
     }
+
+    @Override
+    public String toString() {
+        return "Document{" +
+                "num_renseignement=" + num_renseignement +
+                ", titre='" + titre + '\'' +
+                '}';
+    }
+
+    public String getTitre() {
+        return titre;
+    }
+
+    public void setTitre(String titre) {
+        this.titre = titre;
+    }
 }

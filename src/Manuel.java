@@ -6,4 +6,11 @@ public class Manuel extends Livre {
         super(num_renseignement, titre, auteur, nbPage);
     }
     private String niveau;
+
+    @Override
+    public String toString() {
+        return "Manuel{" +
+                "niveau='" + niveau + '\'' +
+                '}';
+    }
 }

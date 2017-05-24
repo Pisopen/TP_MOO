@@ -5,6 +5,14 @@ public class Dictionnaire extends Document {
     public Dictionnaire(int num_renseignement, String titre) {
         super(num_renseignement, titre);
     }
+
+    @Override
+    public String toString() {
+        return "Dictionnaire{" +
+                "langue='" + langue + '\'' +
+                '}';
+    }
+
     private String langue;
 
 }
