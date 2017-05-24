@@ -1,7 +1,7 @@
 /**
  * Created by Stephane on 24/05/2017.
  */
-public class Document {
+public class Document implements Comparable<Document>{
     protected int num_renseignement;
     protected String titre;
 
@@ -24,5 +24,10 @@ public class Document {
 
     public void setTitre(String titre) {
         this.titre = titre;
+    }
+
+    @Override
+    public int compareTo(Document o) {
+        return titre.compareToIgnoreCase(o.getTitre());
     }
 }
