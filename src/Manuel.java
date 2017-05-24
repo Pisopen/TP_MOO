@@ -7,10 +7,19 @@ public class Manuel extends Livre {
     }
     private String niveau;
 
+    public Manuel(int num_renseignement, String titre, String auteur, int nbPage, String niveau) {
+        super(num_renseignement, titre, auteur, nbPage);
+        this.niveau = niveau;
+    }
+
     @Override
     public String toString() {
         return "Manuel{" +
                 "niveau='" + niveau + '\'' +
+                ", auteur='" + auteur + '\'' +
+                ", nbPage=" + nbPage +
+                ", num_renseignement=" + num_renseignement +
+                ", titre='" + titre + '\'' +
                 '}';
     }
 }
