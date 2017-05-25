@@ -1,7 +1,7 @@
 /**
  * Created by Stephane on 24/05/2017.
  */
-public class Livre extends Document {
+public class Livre extends Document implements Interface{
     public Livre(int num_renseignement, String titre) {
         super(num_renseignement, titre);
     }
@@ -38,5 +38,10 @@ public class Livre extends Document {
 
     public void setNbPage(int nbPage) {
         this.nbPage = nbPage;
+    }
+
+    @Override
+    public void Imprimer() {
+        System.out.println("Imprime "+toString());
     }
 }
