@@ -1,7 +1,7 @@
 /**
  * Created by Stephane on 24/05/2017.
  */
-public class Document implements Comparable<Document>{
+public class Document implements Comparable<Document> {
     protected int num_renseignement;
     protected String titre;
 
