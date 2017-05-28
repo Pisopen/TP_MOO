@@ -9,9 +9,9 @@ public class Main {
         Document livre = new Livre(12, "Pol", "Paul", 150);
         //Interface livre1=new Livre(12,"lol","teemo",150);
         //livre1.Imprimer();
-        etagere.add_doc(livre); //ajout document
-        etagere.add_doc(roman); //ajout document
-        etagere.add_doc(revue); //ajout document
+        etagere.add_doc(livre); //ajout livre
+        etagere.add_doc(roman); //ajout roman
+        etagere.add_doc(revue); //ajout revue
         etagere.Imprimer(); //test impression
         etagere.triEtagere(); //tri etagere
         System.out.println(etagere.search_auteur("Saul")); //recherche auteur
