@@ -14,14 +14,14 @@ public class Etagere implements Interface {
         this.taille = taille;
     }
 
-    public void add_doc(Document document) {
+    public void ajout_doc(Document document) {
         if (taille >= etage_1.size()) {
             etage_1.add(document);
         } else
             System.out.println("etagere pleine");
     }
 
-    public Document search_titre(String text) {
+    public Document rechercher_titre(String text) {
         for (int i = 0; i < etage_1.size(); i++) {
             if (etage_1.get(i).getTitre() == text) {
                 return (etage_1.get(i));
@@ -32,7 +32,7 @@ public class Etagere implements Interface {
     }
 
 
-    public Document search_auteur(String text) {
+    public Document rechercher_auteur(String text) {
         for (int i = 0; i < etage_1.size(); i++) {
             if (etage_1.get(i) instanceof Livre) {
                 Livre livre = (Livre) etage_1.get(i);
