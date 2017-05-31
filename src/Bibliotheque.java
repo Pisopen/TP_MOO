@@ -10,5 +10,4 @@ public class Bibliotheque {
     public void add_etage(Etagere etage){
         biblio.add(etage);
     }
-
 }
