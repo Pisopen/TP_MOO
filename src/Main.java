@@ -19,5 +19,3 @@ public class Main {
         //System.out.println(etagere.search_titre("Dol")); //recherche titre
     }
 }
-
-//Test
